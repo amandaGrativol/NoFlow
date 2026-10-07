@@ -1,0 +1,97 @@
+/* Reset */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Acessibilidade */
+
+:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: 3px;
+}
+
+
+/* Header */
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+
+/* Main */
+
+main {
+    min-height: 60vh;
+}
+
+section {
+    position: relative;
+}
+
+
+/* Hero */
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+
+/* Cards */
+
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+
+/* Footer */
+
+footer a {
+    transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+}
